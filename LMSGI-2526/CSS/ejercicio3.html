@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: rgb(138, 46, 46);
+            ;
+            padding-left: 15px;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            gap: 20px;
+            padding-right: 15px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: rgb(138, 46, 46);
+            font-size: 20px;
+            padding: 25px 15px;
+            font-weight: bold;
+        }
+
+        .nav-list a:hover {
+            color: white;
+        }
+
+        .cta-container {
+            background-image: url(fotos/fondo2.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            text-align: center;
+
+
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .cta-text {
+            color: rgb(233, 185, 185);
+            font-size: 28px;
+            font-weight: bold;
+
+        }
+
+        .cta-button {
+            border-radius: 10px;
+            color: rgb(250, 203, 203);
+            color: black;
+            font-weight: bold;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Coffee</h1>
+        <ul class="nav-list">
+            <li><a href="#Home"> Home</a></li>
+            <li><a href="#About"> About</a></li>
+            <li><a href="#Services"> Services</a></li>
+            <li><a href="#Contact"> Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="cta-container">
+        <h2 class="cta-text">¡Aprovecha nuestra oferta especial!</h2>
+        <p class="cta-text">Hasta un 40% de descuento en productos seleccionados.</p>
+        <button class="cta-button">Descubrir Ofertas</button>
+    </div>
+</body>
+
+</html>

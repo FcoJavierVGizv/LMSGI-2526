@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
     <style>
-        nav{
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
             background-color: blanchedalmond;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
         }
-        .nav-list{
+
+        nav h1 {
+            color: rgb(83, 26, 26);;
+            padding-left: 15px;
+        }
+
+        .nav-list {
             display: flex;
             flex-direction: row;
             list-style-type: none;
-            gap: 2px;
+            gap: 20px;
+            padding-right: 15px;
         }
 
         .nav-list a {
             text-decoration: none;
-            color: black;
+            color: rgb(83, 26, 26);
             font-size: 20px;
             padding: 25px 15px;
             font-weight: bold;
         }
-       
-        .nav-list a:hover{
+
+        .nav-list a:hover {
             color: white;
         }
     </style>
 </head>
+
 <body>
     <nav>
+        <h1>Coffee</h1>
         <ul class="nav-list">
-            <li><a href="#Home" > Home</a></li>
-            <li><a href="#About" > About</a></li>
-            <li><a href="#Services" > Services</a></li>
-            <li><a href="#Contact" > Contact</a></li>
+            <li><a href="#Home"> Home</a></li>
+            <li><a href="#About"> About</a></li>
+            <li><a href="#Services"> Services</a></li>
+            <li><a href="#Contact"> Contact</a></li>
         </ul>
     </nav>
-   
+
 </body>
+
 </html>
