@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title> <!--en el pdf de ejercicios css este es el 8-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #gallery-section .section-title {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        #gallery-section .gallery-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        #gallery-section .gallery-list .gallery-item {
+            width: calc(100%/3 - 32px);
+        }
+
+        #gallery-section .gallery-list .gallery-item .gallery-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="gallery-section">
+
+        <h2 class="section-title">Galería de imágenes</h2>
+
+        <div class="gallery-list">
+            <div class="gallery-item">
+                <img class="gallery-image" src="fotos/gallery-1.jpg" alt="foto1">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="fotos/gallery-2.jpg" alt="foto2">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="fotos/gallery-3.jpg" alt="foto3">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="fotos/gallery-4.jpg" alt="foto4">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="fotos/gallery-5.jpg" alt="foto5">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="fotos/gallery-6.jpg" alt="foto6">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
