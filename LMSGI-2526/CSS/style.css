@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: 100px 100px 100px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: solid 1px black;
+    background-color:blanchedalmond;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover{
+    transform: scale(1.03);
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
