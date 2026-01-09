@@ -2,15 +2,25 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    color:  #343a40;
+    color: #343a40;
 }
 
 nav {
-    background-color: #f8f9fa;
-
+    background: #f8f9fa;
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.logo{
-    width: 200px;
-    height: 200px;
+nav .logo{
+    font-size: 1.6em;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
 }
