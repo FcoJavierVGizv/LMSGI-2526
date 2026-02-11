@@ -41,6 +41,10 @@ nav .menu {
   gap: 1.5rem;
 }
 
+nav .menu button {
+  display: none;
+}
+
 nav .menu li a {
   color: #ffffff;
   text-decoration: none;
@@ -92,9 +96,7 @@ nav .menu li a:hover {
   background-color: var(--hover-light);
 }
 
-.hamburger {
-  display: none;
-}
+
 
 .cta-container {
   min-height: 60vh;
@@ -137,11 +139,11 @@ footer {
   gap: 2rem;
 }
 
-.footer-menu > div h3 {
+.footer-menu>div h3 {
   margin-bottom: 0.5rem;
 }
 
-.footer-menu > div a {
+.footer-menu>div a {
   display: block;
   color: #ffffff;
   text-decoration: none;
@@ -149,13 +151,13 @@ footer {
   transition: color 0.25s ease-in-out;
 }
 
-.footer-menu > div a:hover {
+.footer-menu>div a:hover {
   color: var(--hover-light);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 0.75rem;
   }
@@ -165,9 +167,7 @@ footer {
     justify-content: space-between;
   }
 
-  .hamburger {
-    display: inline-block;
-  }
+
 
   nav .menu {
     width: 100%;
@@ -181,6 +181,7 @@ footer {
 
   footer {
     flex-direction: column;
+    align-items: center;
   }
 
   .footer-menu {
@@ -188,3 +189,18 @@ footer {
   }
 }
 
+@media (max-width: 800px) {
+  nav .menu li {
+    display: none;
+  }
+
+  nav .menu button {
+    display: block;
+    font-size: 20px;
+  }
+
+  .search {
+    display: none;
+  }
+
+}

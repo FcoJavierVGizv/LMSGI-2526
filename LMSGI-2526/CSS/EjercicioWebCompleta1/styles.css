@@ -15,6 +15,13 @@ nav {
     background-color: #f8f9fa;
 }
 
+nav button{
+    display: none;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    border: none;
+}
+
 
 nav .logo {
     font-size: 1.6em;
@@ -134,10 +141,6 @@ nav ul li a {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    
-    
-   
-   
 
 }
 
@@ -207,4 +210,19 @@ footer small{
 footer a{
     font-size:2em;
     text-decoration: none;
+}
+
+@media (max-width: 800px){
+    nav ul{
+        display: none;
+    }
+    nav button{
+        display: block;
+    }
+    .services-container{
+        flex-direction: column;
+    }
+    .services-container div{
+        width: 100%;
+    }
 }
