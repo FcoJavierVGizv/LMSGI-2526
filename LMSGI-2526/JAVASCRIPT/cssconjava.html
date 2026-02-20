@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cuadrado{
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cuadrado"></div>
+    <button onclick="cambiarcolor()">Cambiar color</button>
+
+    <script>
+        function cambiarcolor(){
+            const cuadrado = document.getElementById("cuadrado");
+            cuadrado.style.backgroundColor ="black";
+            cuadrado.style.width = "300px";
+            document.body.style.backgroundColor = "yellow";
+            cuadrado.style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>
